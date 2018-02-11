@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "test": "jest --watch --coverage"
   },
   "babel": {
-    "presets": ["env", "react"]
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.1",
+    "enzyme": "^3.3.0",
+    "jest": "^22.1.4",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
